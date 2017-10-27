@@ -1,0 +1,9 @@
+<app-header (navigation)="carregarPagina($event)" ></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-recipes *ngIf="pagina === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="pagina !== 'recipe'"></app-shopping-list>
+    </div>
+  </div>
+</div>
